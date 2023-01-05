@@ -8,7 +8,7 @@ async function googleVerify(token) {
       audience: process.env.GOOGLE_ID,  
   });
   const payload = ticket.getPayload();
-  const userid = payload['sub'];
+  //const userid = payload['sub'];
 
   //const { name, email, picture } = payload;
   //console.log({payload});
