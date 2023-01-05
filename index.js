@@ -10,6 +10,8 @@ console.log(process.env.PORT); // 3000
 
 const app= express(); // Crear el servidor de express
 app.use(cors()); // Configurar Cors
+// Carpeta publica
+app.use(express.static('public'));
 // Lectura y parseo del body
 app.use(express.json());
 
